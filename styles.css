@@ -95,6 +95,16 @@ img { display: block; max-width: 100%; }
 
 .brand .accent { color: var(--ember); }
 
+.brand .tagline {
+  margin-left: 3px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 0.42em;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -474,6 +484,7 @@ h1 {
 @media (max-width: 860px) {
   .nav-links a.plain { display: none; }
   .nav .btn.line { display: none; }
+  .brand .tagline { display: none; }
   .hero { min-height: 62vh; }
   .hero-bg img { object-position: 78% 60%; }
   .order-grid { grid-template-columns: 1fr; }
