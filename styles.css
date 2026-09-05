@@ -219,7 +219,7 @@ h1 {
 .framed img { width: 100%; height: auto; transition: transform 0.5s ease; }
 .framed:hover img { transform: scale(1.015); }
 
-/* Page header (non-hero page intro, e.g. Menu page) */
+/* Page header (non-hero page intro, e.g. Menu, Gallery pages) */
 .page-head { padding: clamp(56px, 9vw, 96px) 0 clamp(40px, 6vw, 64px); }
 .page-head .wrap { max-width: 760px; }
 .page-head h1 { font-size: clamp(32px, 5vw, 54px); }
@@ -229,6 +229,39 @@ h1 {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.7;
+}
+
+/* Gallery */
+.gallery { padding: 0 0 clamp(64px, 9vw, 108px); }
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 18px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(28,23,18,0.1);
+  background: #0e0c0a;
+}
+
+.gallery-item img { width: 100%; height: auto; display: block; transition: transform 0.4s ease; }
+.gallery-item:hover img { transform: scale(1.03); }
+
+.gallery-item figcaption {
+  padding: 10px 14px;
+  background: var(--paper);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .gallery-grid { column-count: 1; }
 }
 
 /* Featured carousel */
@@ -656,6 +689,7 @@ h1 {
   .about-split { grid-template-columns: 1fr; }
   .cater-grid { grid-template-columns: 1fr; }
   .cater-ticket { max-width: none; }
+  .gallery-grid { column-count: 2; }
   .about-photo { order: -1; }
   .sides-grid { grid-template-columns: 1fr; }
   .closer-grid { grid-template-columns: 1fr; }
