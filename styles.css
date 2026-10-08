@@ -550,6 +550,9 @@ h1 {
 
 .sides-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 
+.sides-grid-single { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
+.sides-grid-single .side-photo { aspect-ratio: 16 / 10; }
+
 .side { background: var(--paper); }
 
 .side-photo { aspect-ratio: 4 / 3; overflow: hidden; }
