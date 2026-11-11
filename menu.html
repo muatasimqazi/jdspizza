@@ -5,8 +5,20 @@
   <title>JD's Pizza Menu</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://order.toasttab.com/online/jds-pizza-juice-bar">
-  <meta http-equiv="refresh" content="0; url=https://order.toasttab.com/online/jds-pizza-juice-bar">
-  <script>location.replace("https://order.toasttab.com/online/jds-pizza-juice-bar");</script>
+  <meta http-equiv="refresh" content="2; url=https://order.toasttab.com/online/jds-pizza-juice-bar">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXZ7GTPLM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Redirect once the page view is sent; fall back after 1s if tags are blocked.
+  function go(){ location.replace("https://order.toasttab.com/online/jds-pizza-juice-bar"); }
+  gtag('config', 'G-HXZ7GTPLM8', { event_callback: go });
+  gtag('config', 'AW-18561020755');
+  setTimeout(go, 1000);
+</script>
 </head>
 <body>
   <p>Redirecting to the <a href="https://order.toasttab.com/online/jds-pizza-juice-bar">JD's Pizza menu</a>…</p>
